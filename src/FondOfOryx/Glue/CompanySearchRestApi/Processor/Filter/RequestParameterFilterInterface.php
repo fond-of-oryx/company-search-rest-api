@@ -10,7 +10,7 @@ interface RequestParameterFilterInterface
      * @param \Spryker\Glue\GlueApplication\Rest\Request\Data\RestRequestInterface $restRequest
      * @param string $parameterName
      *
-     * @return string
+     * @return string|null
      */
     public function getRequestParameter(RestRequestInterface $restRequest, string $parameterName): ?string;
 }
